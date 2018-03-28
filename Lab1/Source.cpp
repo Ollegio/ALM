@@ -28,5 +28,8 @@ int main() {
 	output.replace(cyclePos, 5, "if");
 	output.insert(cyclePos, labelName + ":\n");
 	output.insert(output.find("var"), "label " + labelName + ";\n");
-	cout << output;
+
+	ofstream out("output.pas", ofstream::out);
+	
+	out << output;
 }
