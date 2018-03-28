@@ -24,13 +24,9 @@ int main() {
 	string output = program;
 	
 	output.insert(cyclePos + cycleLength - 4, "goto " + labelName + ";\n");
-	cout << output;
 	output.replace(conditionStart + condition.length(), 2, "then");
-	cout << output;
 	output.replace(cyclePos, 5, "if");
-	cout << output;
 	output.insert(cyclePos, labelName + ":\n");
-	cout << output;
 	output.insert(output.find("var"), "label " + labelName + ";\n");
 	cout << output;
 }
