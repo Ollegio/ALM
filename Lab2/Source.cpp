@@ -211,3 +211,35 @@ public:
 		return bitsetMultiply(*this, r);
 	}
 };
+
+int main() {
+	bitsetArithmetic<4> oprnd_1, oprnd_2, res;
+	bitset<2> div(3), mul(0);
+	string operation;
+	cin >> operation;
+	if (operation.length() != 2 + 4 + 4) {
+		cout << "invalid operation length";
+		return 0;
+	}
+		
+	if (count(operation.begin(), operation.end(), '1') + count(operation.begin(), operation.end(), '0') != operation.length()) {
+		cout << "invalid code";
+		return 0;
+	}
+	oprnd_1 = operation.substr(3, 4);
+	oprnd_2 = operation.substr(7, 4);
+	if (bitset<2>(operation.substr(0, 2)) == div) {
+		res = oprnd_1 / oprnd_2;
+		cout << res;
+	}
+	else {
+		if (bitset<2>(operation.substr(0, 2)) == mul) {
+			res = oprnd_1 * oprnd_2;
+			cout << res;
+		}
+		else {
+			cout << "invalid operation";
+			return 0;
+		}
+	}
+}
