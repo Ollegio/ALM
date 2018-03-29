@@ -8,8 +8,9 @@ begin
 if i >= 0 then
 	begin
 		write(i);
+		writeln();
 		i := i - 1;
-	goto a;
+		goto a;
 end;
 	write(' hi');
 end.

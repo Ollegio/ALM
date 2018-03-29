@@ -6,6 +6,7 @@ begin
 	while i >= 0 do
 	begin
 		write(i);
+		writeln();
 		i := i - 1;
 	end;
 	write(' hi');
