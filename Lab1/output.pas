@@ -1,16 +1,16 @@
 program Cycle;
-label a;
+label cycle;
 var
-	i : integer;
+	k : integer;
 begin
-	i := 10;
-	a:
-if i >= 0 then
+	k := 10;
+	cycle:
+if k < 100 then
 	begin
 		write(i);
 		writeln();
 		i := i - 1;
-		goto a;
+		goto cycle;
 end;
 	write(' hi');
 end.

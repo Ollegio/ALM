@@ -1,9 +1,9 @@
 program Cycle;
 var
-	i : integer;
+	k : integer;
 begin
-	i := 10;
-	while i >= 0 do
+	k := 10;
+	while k < 100 do
 	begin
 		write(i);
 		writeln();

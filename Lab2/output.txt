@@ -1,0 +1,25 @@
+S0
+Operation registry: 00
+Operand 1: 0000
+Operand 2: 0000
+error code: 00000S1
+Operation registry: 00
+Operand 1: 0000
+Operand 2: 0000
+error code: 00000S2
+Operation registry: 00
+Operand 1: 0000
+Operand 2: 0000
+error code: 00000S3
+Operation registry: 00
+Operand 1: 1111
+Operand 2: 0000
+error code: 00000S4
+Operation registry: 00
+Operand 1: 1111
+Operand 2: 0010
+error code: 00000S5
+Operation registry: 00
+Operand 1: 1111
+Operand 2: 0010
+error code: 00000Result: 00011110
